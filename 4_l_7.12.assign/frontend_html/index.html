@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Car Brand Classifier</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="card">
+        <h2>🚗 Car Brand Classifier</h2>
+
+        <!-- File input -->
+        <label class="upload-box">
+            <input type="file" id="fileInput" accept="image/*" hidden />
+            <span>Click to Upload Image</span>
+        </label>
+
+        <!-- Preview -->
+        <img id="preview" class="preview-img" style="display:none;" />
+
+        <!-- Model selection -->
+        <select id="modelSelect" class="dropdown">
+            <option value="logreg">Logistic Regression</option>
+            <option value="knn">KNN</option>
+            <option value="gnb">Naive Bayes</option>
+        </select>
+
+        <!-- Button -->
+        <button id="predictBtn" type="button" class="predict-btn">Predict Brand</button>
+
+        <!-- Result -->
+        <div id="result" class="result-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

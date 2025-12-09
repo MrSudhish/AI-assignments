@@ -1,0 +1,103 @@
+/* Background Gradient */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: white;
+}
+
+/* Main card container */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    padding: 28px;
+    width: 380px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Title */
+.card h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/* Upload box */
+.upload-box {
+    display: block;
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px dashed rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.upload-box:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgb(30, 193, 234);
+}
+
+.upload-box span {
+    font-size: 16px;
+}
+
+/* Preview image */
+.preview-img {
+    width: 100%;
+    border-radius: 12px;
+    margin: 12px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Dropdown */
+.dropdown {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 18px 0;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255,255,255,0.2);
+    color: rgb(67, 28, 173);
+    font-size: 16px;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Predict Button */
+.predict-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+.predict-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Result Box */
+.result-box {
+    margin-top: 18px;
+    background: rgba(0,0,0,0.3);
+    padding: 12px;
+    border-radius: 10px;
+    min-height: 40px;
+    font-size: 17px;
+}
